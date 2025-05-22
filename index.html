@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Challenge</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,106 +14,107 @@
 </head>
 
 <body>
-    <div class="desktop">
-        <div class="div">
-            <div class="overlap">
-                <div class="navbar">
-                    <a href="/" class="text-wrapper">Çözüm ve Hizmetler</a>
-                    <a href="/" class="text-wrapper">Ürünler</a>
-                    <a href="/" class="text-wrapper">Teknolojiler</a>
-                    <a href="/" class="text-wrapper">İnsan Kaynakları</a>
-                    <a href="/" class="text-wrapper">Kurumsal</a>
+    <div class="layout">
+        <div class="layout__main">
+            <div class="header">
+                <nav class="header__navbar">
+                    <a href="/" class="header__nav-item">Çözüm ve Hizmetler</a>
+                    <a href="/" class="header__nav-item">Ürünler</a>
+                    <a href="/" class="header__nav-item">Teknolojiler</a>
+                    <a href="/" class="header__nav-item">İnsan Kaynakları</a>
+                    <a href="/" class="header__nav-item">Kurumsal</a>
+                </nav>
+                <div class="header__contact">
+                    <button class="header__contact-btn" onclick="window.location.href='/'">İletişim</button>
                 </div>
-                <div class="frame">
-                    <button class="text-wrapper-2" onclick="window.location.href='/'">İletişim</button>
-                </div>
-                <div class="group">
-                    <div class="bilgi">Bilgi Teknolojilerinde<br />23 Yıllık Tecrübe</div>
-                    <p class="p">
+                <div class="hero">
+                    <div class="hero__title">Bilgi Teknolojilerinde<br />23 Yıllık Tecrübe</div>
+                    <p class="hero-description">
                         Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe
                         kazanmış uzman
                         kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
                     </p>
                     <div class="mail-input">
-                        <div class="overlap-group">
-                            <div class="text-wrapper-3">Mail bültenimize kayıt ol</div>
-                            <div class="div-wrapper">
-                                <button class="text-wrapper-4" onclick="window.location.href='/'">Kayıt Ol</button>
+                        <div class="signup-content">
+                            <div class="signup-text">Mail bültenimize kayıt ol</div>
+                            <div class="signup-button-wrapper">
+                                <button class="signup-button" onclick="window.location.href='/'">Kayıt Ol</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <img src="images/ImageHeader.png" alt="" />
             </div>
 
-            <div class="group-document">
-                <div class="text-wrapper-22">Kalite ve Süreç Yönetimi</div>
-                <p class="text-wrapper-21">
+            <div class="document-section">
+                <div class="section-heading">Kalite ve Süreç Yönetimi</div>
+                <p class="section-description">
                     Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
                     uzman
                     kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
                 </p>
-                <div class="group-icon">
-                    <div class="text-wrapper-23">Döküman Analizi</div>
-                    <p class="text-wrapper-file">
+                <div class="analysis-items">
+                    <div class="analysis-item-1">Döküman Analizi</div>
+                    <p class="icon-wrapper-1">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-9">
-                        <div class="ellipse-7"></div>
+                    <div class="analysis-icon-1">
+                        <div class="files"></div>
                         <img class="file" src="images/IconFile.svg" />
                     </div>
-                    <div class="text-wrapper-27">Kabul ve Değerlendirme</div>
-                    <p class="text-wrapper-33">
+                    <div class="analysis-item-2">Kabul ve Değerlendirme</div>
+                    <p class="icon-wrapper-2">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-6">
-                        <div class="ellipse-3"></div>
+                    <div class="analysis-icon-2">
+                        <div class="stars"></div>
                         <img class="star" src="images/IconStar.svg" />
                     </div>
-                    <div class="text-wrapper-25">İş Kuralları Analizi</div>
-                    <p class="text-wrapper-crow">
+                    <div class="analysis-item-3">İş Kuralları Analizi</div>
+                    <p class="icon-wrapper-3">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-7">
-                        <div class="ellipse-4"></div>
+                    <div class="analysis-icon-3">
+                        <div class="crowns"></div>
                         <img class="crown" src="images/IconCrown.svg" />
                     </div>
-                    <div class="text-wrapper-24">Akış Diyagramları</div>
-                    <p class="text-wrapper-star">
+                    <div class="analysis-item-4">Akış Diyagramları</div>
+                    <p class="icon-wrapper-4">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-group-3">
-                        <div class="ellipse-6"></div>
+                    <div class="analysis-icon-4">
+                        <div class="chartbars"></div>
                         <img class="chart-bar" src="images/IconChartBar.svg" />
                     </div>
-                    <div class="text-wrapper-28">Paydaş Analizi</div>
-                    <p class="text-wrapper-34">
+                    <div class="analysis-item-5">Paydaş Analizi</div>
+                    <p class="icon-wrapper-5">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-5">
-                        <div class="ellipse-2"></div>
+                    <div class="analysis-icon-5">
+                        <div class="chart-pie-slices"></div>
                         <img class="chart-pie-slice" src="images/IconChartPieSlice.svg" />
                     </div>
-                    <div class="text-wrapper-26">Prototipleme</div>
-                    <p class="text-wrapper-32">
+                    <div class="analysis-item-6">Prototipleme</div>
+                    <p class="icon-wrapper-6">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="overlap-8">
-                        <div class="ellipse-5"></div>
+                    <div class="analysis-icon-6">
+                        <div class="figmas"></div>
                         <img class="figma-logo" src="images/IconFigmaLogo.svg" />
                     </div>
                 </div>
             </div>
 
-            <div class="stats">
-                <div class="overlap-group-wrapper">
-                    <div class="overlap-group-test">
-                        <img class="foreground-image" src="images/ImageBackgroud.png" />
+            <div class="stats-section">
+                <div class="stats-backgrounds">
+                    <div class="stats-background">
+                        <img class="background-image" src="images/ImageBackgroud.png" />
 
-                        <div class="title-description">
-                            <div class="section-title-wrapper">
-                                <div class="section-title">Test Yönetimiyle Neler Sağlıyoruz?</div>
+                        <div class="stats-text-content">
+                            <div class="stats-titles">
+                                <div class="stats-title">Test Yönetimiyle Neler Sağlıyoruz?</div>
                             </div>
-                            <div class="description">IoT Destekli Çözümler</div>
+                            <div class="stats-subtitle">IoT Destekli Çözümler</div>
                         </div>
 
                         <div class="group-test">
@@ -168,7 +169,7 @@
             </div>
 
             <div class="logo-clouds">
-                <div class="section-heading">
+                <div class="section-heading-2">
                     <div class="section-title-wrapper">
                         <div class="section-title-2">Referanslarımız</div>
                     </div>
@@ -270,11 +271,11 @@
                 <div class="footer-bottom">
                     <p class="text-wrapper-10">© Copyright 2010-2021 - Can Çevik</p>
                     <div class="group-logo">
-                        <img class="medium-logo" src="images/MediumLogo.svg" alt=""/>
-                        <img class="linkedin-logo" src="images/LinkedinLogo.svg" alt=""/>
-                        <img class="twitter-logo" src="images/TwitterLogo.svg" alt=""/>
-                        <img class="instagram-logo" src="images/InstagramLogo.svg" alt=""/>
-                        <img class="facebook-logo" src="images/FacebookLogo.svg" alt=""/>
+                        <img class="medium-logo" src="images/MediumLogo.svg" alt="" />
+                        <img class="linkedin-logo" src="images/LinkedinLogo.svg" alt="" />
+                        <img class="twitter-logo" src="images/TwitterLogo.svg" alt="" />
+                        <img class="instagram-logo" src="images/InstagramLogo.svg" alt="" />
+                        <img class="facebook-logo" src="images/FacebookLogo.svg" alt="" />
                     </div>
                 </div>
             </div>
