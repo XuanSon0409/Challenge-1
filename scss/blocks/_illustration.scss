@@ -1,0 +1,121 @@
+.illustration {
+    position: absolute;
+    width: 1197px;
+    height: 1080px;
+    top: 2343px;
+    left: 121px;
+
+    &__block {
+        position: absolute;
+        width: 1197px;
+        height: 480px;
+
+        &--left {
+            top: 0;
+            left: 0;
+        }
+
+        &--right {
+            top: 600px;
+            left: 0;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 612px;
+        height: 480px;
+        top: 0;
+        left: 0;
+    }
+
+    &__title {
+        position: absolute;
+        width: 608px;
+        top: 0;
+        left: 0;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 700;
+        color: #2e2e2e;
+        font-size: 64px;
+        line-height: 76px;
+    }
+
+    &__description {
+        position: absolute;
+        width: 523px;
+        top: 192px;
+        left: 0;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 400;
+        color: #808080;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    &__image {
+        position: absolute;
+        width: 504px;
+        height: 480px;
+        top: 0;
+        left: 693px;
+        object-fit: cover;
+    }
+
+    &__contents {
+        position: absolute;
+        width: 552px;
+        height: 480px;
+        top: 0;
+        left: 649px;
+    }
+
+    &__titles {
+        position: absolute;
+        width: 548px;
+        top: 0;
+        left: 0;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 700;
+        color: #2e2e2e;
+        font-size: 64px;
+        line-height: 76px;
+    }
+
+    &__images {
+        position: absolute;
+        width: 504px;
+        height: 480px;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.button {
+    &--primary {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 160px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+        position: absolute;
+        top: 432px;
+        left: 0;
+        background-color: #f84646;
+        border-radius: 8px;
+    }
+
+    &__text {
+        position: relative;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        white-space: nowrap;
+    }
+}

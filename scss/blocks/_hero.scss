@@ -1,0 +1,85 @@
+.hero {
+    position: absolute;
+    width: 669px;
+    height: 406px;
+    top: 200px;
+    left: 122px;
+
+    &__title {
+        position: absolute;
+        width: 665px;
+        top: 0;
+        left: 0;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 82px;
+        color: #000;
+    }
+
+    &__description {
+        position: absolute;
+        width: 650px;
+        top: 184px;
+        left: 0;
+        font-family: "Manrope", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 0.2px;
+        color: #000;
+    }
+
+    &__signup {
+        position: absolute;
+        width: 506px;
+        height: 73px;
+        top: 333px;
+        left: 0;
+
+        .signup {
+            position: relative;
+            width: 502px;
+            height: 73px;
+            background-color: #fff;
+            border-radius: 8px;
+
+            &__text {
+                position: absolute;
+                top: 19px;
+                left: 32px;
+                font-family: "Manrope", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 36px;
+                letter-spacing: 0.2px;
+                color: #00000066;
+                white-space: nowrap;
+            }
+
+            &__button-wrapper {
+                position: absolute;
+                width: 136px;
+                height: 61px;
+                top: 6px;
+                left: 360px;
+                background-color: #f84646;
+                border-radius: 8px;
+            }
+
+            &__button {
+                all: unset;
+                position: absolute;
+                top: 13px;
+                left: 37px;
+                font-family: "Manrope", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 36px;
+                letter-spacing: 0.2px;
+                color: #fff;
+                white-space: nowrap;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 5356px;
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+}

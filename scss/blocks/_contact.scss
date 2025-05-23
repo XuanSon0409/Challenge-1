@@ -1,0 +1,81 @@
+.contact {
+    position: absolute;
+    width: 649px;
+    height: 314px;
+    top: 4346px;
+    left: 397px;
+
+    &__icon-wrapper {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 0;
+        left: 262px;
+    }
+
+    &__icon-background {
+        position: absolute;
+        width: 61px;
+        height: 61px;
+        top: 6px;
+        left: 55px;
+        background-color: #f84646;
+        border-radius: 50%;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 0;
+        left: 0;
+    }
+
+    &__title {
+        position: absolute;
+        top: 130px;
+        left: 194px;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 800;
+        color: #000;
+        font-size: 48px;
+        text-align: center;
+        line-height: 32px;
+        white-space: nowrap;
+    }
+
+    &__description {
+        position: absolute;
+        top: 182px;
+        left: 0;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 500;
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        line-height: 32px;
+        white-space: nowrap;
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 25px 40px;
+        position: absolute;
+        top: 244px;
+        left: 220px;
+        background-color: #f84646;
+        border-radius: 8px;
+
+        &-text {
+            font-family: "Manrope", Sans-serif;
+            font-weight: 600;
+            color: #fff;
+            font-size: 24px;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+    }
+}

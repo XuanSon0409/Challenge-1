@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Challenge</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="scss/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,16 +29,16 @@
                 </div>
                 <div class="hero">
                     <div class="hero__title">Bilgi Teknolojilerinde<br />23 Yıllık Tecrübe</div>
-                    <p class="hero-description">
+                    <p class="hero__description">
                         Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe
                         kazanmış uzman
                         kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
                     </p>
-                    <div class="mail-input">
-                        <div class="signup-content">
-                            <div class="signup-text">Mail bültenimize kayıt ol</div>
-                            <div class="signup-button-wrapper">
-                                <button class="signup-button" onclick="window.location.href='/'">Kayıt Ol</button>
+                    <div class="hero__signup">
+                        <div class="signup">
+                            <div class="signup__text">Mail bültenimize kayıt ol</div>
+                            <div class="signup__button-wrapper">
+                                <button class="signup__button" onclick="window.location.href='/'">Kayıt Ol</button>
                             </div>
                         </div>
                     </div>
@@ -46,95 +46,94 @@
                 <img src="images/ImageHeader.png" alt="" />
             </div>
 
-            <div class="document-section">
-                <div class="section-heading">Kalite ve Süreç Yönetimi</div>
-                <p class="section-description">
+            <div class="document">
+                <div class="document__heading">Kalite ve Süreç Yönetimi</div>
+                <p class="document__description">
                     Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
                     uzman
                     kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
                 </p>
-                <div class="analysis-items">
-                    <div class="analysis-item-1">Döküman Analizi</div>
-                    <p class="icon-wrapper-1">
+                <div class="document__analysis">
+                    <div class="document__item document__item--1">Döküman Analizi</div>
+                    <p class="document__text document__text--1">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-1">
+                    <div class="document__icon document__icon--1">
                         <div class="files"></div>
                         <img class="file" src="images/IconFile.svg" />
                     </div>
-                    <div class="analysis-item-2">Kabul ve Değerlendirme</div>
-                    <p class="icon-wrapper-2">
+                    <div class="document__item document__item--2">Kabul ve Değerlendirme</div>
+                    <p class="document__text document__text--2">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-2">
+                    <div class="document__icon document__icon--2">
                         <div class="stars"></div>
                         <img class="star" src="images/IconStar.svg" />
                     </div>
-                    <div class="analysis-item-3">İş Kuralları Analizi</div>
-                    <p class="icon-wrapper-3">
+                    <div class="document__item document__item--3">İş Kuralları Analizi</div>
+                    <p class="document__text document__text--3">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-3">
+                    <div class="document__icon document__icon--3">
                         <div class="crowns"></div>
                         <img class="crown" src="images/IconCrown.svg" />
                     </div>
-                    <div class="analysis-item-4">Akış Diyagramları</div>
-                    <p class="icon-wrapper-4">
+                    <div class="document__item document__item--4">Akış Diyagramları</div>
+                    <p class="document__text document__text--4">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-4">
+                    <div class="document__icon document__icon--4">
                         <div class="chartbars"></div>
                         <img class="chart-bar" src="images/IconChartBar.svg" />
                     </div>
-                    <div class="analysis-item-5">Paydaş Analizi</div>
-                    <p class="icon-wrapper-5">
+                    <div class="document__item document__item--5">Paydaş Analizi</div>
+                    <p class="document__text document__text--5">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-5">
+                    <div class="document__icon document__icon--5">
                         <div class="chart-pie-slices"></div>
                         <img class="chart-pie-slice" src="images/IconChartPieSlice.svg" />
                     </div>
-                    <div class="analysis-item-6">Prototipleme</div>
-                    <p class="icon-wrapper-6">
+                    <div class="document__item document__item--6">Prototipleme</div>
+                    <p class="document__text document__text--6">
                         Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.
                     </p>
-                    <div class="analysis-icon-6">
+                    <div class="document__icon document__icon--6">
                         <div class="figmas"></div>
                         <img class="figma-logo" src="images/IconFigmaLogo.svg" />
                     </div>
                 </div>
             </div>
 
-            <div class="stats-section">
-                <div class="stats-backgrounds">
-                    <div class="stats-background">
-                        <img class="background-image" src="images/ImageBackgroud.png" />
-
-                        <div class="stats-text-content">
-                            <div class="stats-titles">
-                                <div class="stats-title">Test Yönetimiyle Neler Sağlıyoruz?</div>
+            <div class="stats">
+                <div class="stats__backgrounds">
+                    <div class="stats__background">
+                        <img class="stats__background-image" src="images/ImageBackgroud.png" />
+                        <div class="stats__content">
+                            <div class="stats__titles">
+                                <div class="stats__title">Test Yönetimiyle Neler Sağlıyoruz?</div>
                             </div>
-                            <div class="stats-subtitle">IoT Destekli Çözümler</div>
+                            <div class="stats__subtitle">IoT Destekli Çözümler</div>
                         </div>
 
-                        <div class="group-test">
-                            <div class="yaz-l-m-kalitesini">Yazılım Kalitesini<br />Arttırıyoruz</div>
-                            <div class="olas-hatalar-nceden">Olası Hataları Önceden<br />Belirliyoruz</div>
-                            <div class="olu-abilecek">Oluşabilecek Riskleri<br />Önlüyoruz</div>
-                            <div class="zaman-ve-maliyetten">Zaman ve Maliyetten<br />Tasarruf Sağlıyoruz</div>
-                            <div class="caret-circle-double"></div>
-                            <div class="caret-circle-double-2"></div>
-                            <div class="caret-circle-double-3"></div>
+                        <div class="stats__benefit">
+                            <div class="stats__benefit--1">Yazılım Kalitesini<br />Arttırıyoruz</div>
+                            <div class="stats__benefit--2">Olası Hataları Önceden<br />Belirliyoruz</div>
+                            <div class="stats__benefit--3">Oluşabilecek Riskleri<br />Önlüyoruz</div>
+                            <div class="stats__benefit--4">Zaman ve Maliyetten<br />Tasarruf Sağlıyoruz</div>
+                            <div class="stats__icon stats__icon--1"></div>
+                            <div class="stats__icon stats__icon--2"></div>
+                            <div class="stats__icon stats__icon--3"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="group-illustration">
-                <div class="value">
-                    <div class="group-illustration1">
-                        <div class="text-wrapper-5">Kalite ve Süreç Yönetimi</div>
-                        <p class="text-wrapper-6">
+            <div class="illustration">
+                <div class="illustration__block illustration__block--left">
+                    <div class="illustration__content">
+                        <div class="illustration__title">Kalite ve Süreç Yönetimi</div>
+                        <p class="illustration__description">
                             Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje
                             yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu
                             düşündüğünüz
@@ -142,16 +141,16 @@
                             uygulamak ve
                             geliştirmek için yanınızdayız.
                         </p>
-                        <button class="button">
-                            <div class="text-wrapper-7">Keşfet</div>
+                        <button class="button button--primary">
+                            <div class="button__text">Keşfet</div>
                         </button>
                     </div>
-                    <img class="illustration-1" src="images/Illustration1.png" />
+                    <img class="illustration__image" src="images/Illustration1.png" />
                 </div>
-                <div class="value-2">
-                    <div class="group-illustration2">
-                        <div class="text-wrapper-8">Test Yönetimi ve Analizi</div>
-                        <p class="text-wrapper-6">
+                <div class="illustration__block illustration__block--right">
+                    <div class="illustration__contents">
+                        <div class="illustration__titles">Test Yönetimi ve Analizi</div>
+                        <p class="illustration__description">
                             Danışmanlığını yürüttüğümüz projelerde yazılım hatalarını önlemek amacıyla
                             gerçekleştirdiğimiz testleri
                             her proje aşamasında manuel ya da test otomasyonu ile dikkatle uygulamaktayız. Deneyimli
@@ -160,122 +159,123 @@
                             tatmin edici bir
                             müşteri deneyimi sunmaktadır.
                         </p>
-                        <button class="button">
-                            <div class="text-wrapper-7">Keşfet</div>
+                        <button class="button button--primary">
+                            <div class="button__text">Keşfet</div>
                         </button>
                     </div>
-                    <img class="illustration-2" src="images/Illustration2.png" />
+                    <img class="illustration__images" src="images/Illustration2.png" />
                 </div>
             </div>
 
             <div class="logo-clouds">
-                <div class="section-heading-2">
-                    <div class="section-title-wrapper">
-                        <div class="section-title-2">Referanslarımız</div>
-                    </div>
-                    <p class="description-2">Bize güvenen ve beraber çalıştığımız iş ortaklarımız</p>
+                <div class="logo-clouds__heading">
+                    <div class="logo-clouds__title">Referanslarımız</div>
+                    <p class="logo-clouds__description">Bize güvenen ve beraber çalıştığımız iş ortaklarımız</p>
                 </div>
-                <div class="logos">
-                    <div class="col">
-                        <div class="div-2">
-                            <img class="image-2" src="images/LogoBorusan.png" />
+                <div class="logo-clouds__logos">
+                    <div class="logo-clouds__col">
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--1" src="images/LogoBorusan.png" />
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="div-2">
-                            <img class="image-3" src="images/LogoIstanbul.png" />
+                    <div class="logo-clouds__col">
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--2" src="images/LogoIstanbul.png" />
                         </div>
-                        <div class="div-2">
-                            <div class="bookmyshow-logo">
-                                <img class="group-9" src="images/LogoBookMyShow.png" />
+                        <div class="logo-clouds__logo">
+                            <div class="logo-clouds__bookmyshow-logo">
+                                <img class="logo-clouds__logo--3" src="images/LogoBookMyShow.png" />
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="div-2">
-                            <img class="image-4" src="images/LogoAkbank.png" />
+                    <div class="logo-clouds__col">
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--4" src="images/LogoAkbank.png" />
                         </div>
-                        <div class="div-2">
-                            <img class="image-5" src="images/LogoAkcansa.png" />
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--5" src="images/LogoAkcansa.png" />
                         </div>
-                        <div class="div-2">
-                            <div class="frame-3">
-                                <div class="text-wrapper-20">Tümünü Gör</div>
-                                <img class="image-6" src="images/LogoTumunuGor.png"></img>
+                        <div class="logo-clouds__logo">
+                            <div class="logo-clouds__see-all">
+                                <div class="logo-clouds__see-all-text">Tümünü Gör</div>
+                                <img class="logo-clouds__see-all-icon" src="images/LogoTumunuGor.png"></img>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="div-2">
-                            <img class="image-7" src="images/LogoAktas.png" />
+                    <div class="logo-clouds__col">
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--7" src="images/LogoAktas.png" />
                         </div>
-                        <div class="div-2">
-                            <img class="image-8" src="images/LogoOla.png"></img>
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--8" src="images/LogoOla.png"></img>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="div-2">
-                            <img class="image-9" src="images/LogoAmazon.svg" />
+                    <div class="logo-clouds__col">
+                        <div class="logo-clouds__logo">
+                            <img class="logo-clouds__logo--9" src="images/LogoAmazon.svg" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="group-8">
-                <div class="overlap-4">
-                    <div class="ellipse"></div>
-                    <img class="users" src="images/IconUsers.svg" />
+            <div class="contact">
+                <div class="contact__icon-wrapper">
+                    <div class="contact__icon-background"></div>
+                    <img class="contact__icon" src="images/IconUsers.svg" />
                 </div>
-                <div class="text-wrapper-17">Bize Ulaşın</div>
-                <p class="text-wrapper-18">
+                <div class="contact__title">Bize Ulaşın</div>
+                <p class="contact__description">
                     Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.
                 </p>
-                <div class="frame-2">
-                    <div class="text-wrapper-19">Bize Ulaşın</div>
+                <div class="contact__button">
+                    <div class="contact__button-text">Bize Ulaşın</div>
                 </div>
             </div>
 
             <div class="footer-wrapper">
                 <footer class="footer">
-                    <div class="footer-columns">
-                        <div class="group-6">
-                            <div class="section">
-                                <div class="text-wrapper-11">Uzman Talep Formu</div>
-                                <div class="text-wrapper-12">Bilgi İstek Formu</div>
-                                <div class="text-wrapper-13">İletişim</div>
+                    <div class="footer__columns">
+                        <div class="footer__groups">
+                            <div class="footer__section footer__section--1">
+                                <div class="footer__link--1">İletişim</div>
+                                <div class="footer__link--2">Bilgi İstek Formu</div>
+                                <div class="footer__link--3">Uzman Talep Formu</div>
+                                   
                             </div>
-                            <div class="section-2">
-                                <div class="text-wrapper-14">İş Ortakları</div>
-                                <div class="text-wrapper-11">Belge ve Yetkinlikler</div>
-                                <div class="text-wrapper-12">Hakkımızda</div>
-                                <div class="text-wrapper-13">Kurumsal</div>
+                            <div class="footer__section footer__section--2">
+                                <div class="footer__link--1">Kurumsal</div>
+                                <div class="footer__link--2">Hakkımızda</div>                              
+                                <div class="footer__link--3">Belge ve Yetkinlikler</div>
+                                <div class="footer__link--4">İş Ortakları</div>
                             </div>
-                            <div class="section-3">
-                                <div class="text-wrapper-15">İçerik Yönetim Sistemi</div>
-                                <div class="text-wrapper-14">Müşteri İlişkileri Yönetim Sistemi</div>
-                                <div class="text-wrapper-11">İnsan Sermayesi Yönetim Sistemi</div>
-                                <div class="text-wrapper-12">Eğitim Yönetim Sistemi</div>
-                                <div class="text-wrapper-13">Ürünler</div>
+                            <div class="footer__section footer__section--3">
+                                <div class="footer__link--1">Ürünler</div>
+                                <div class="footer__link--2">Eğitim Yönetim Sistemi</div>                                                            
+                                <div class="footer__link--3">İnsan Sermayesi Yönetim Sistemi</div>
+                                <div class="footer__link--4">Müşteri İlişkileri Yönetim Sistemi</div>
+                                <div class="footer__link--5">İçerik Yönetim Sistemi</div>
+                                                              
                             </div>
-                            <div class="section-4">
-                                <div class="text-wrapper-16">IoT Destekli Çözümler</div>
-                                <div class="text-wrapper-15">Danışmanlık</div>
-                                <div class="text-wrapper-14">Kalite ve Süreç Yönetimi</div>
-                                <div class="text-wrapper-11">Outsourcing</div>
-                                <div class="text-wrapper-12">Yazılım Geliştirme</div>
-                                <div class="text-wrapper-13">Çözüm ve Hizmetler</div>
+                            <div class="footer__section footer__section--4">
+                                <div class="footer__link--1">Çözüm ve Hizmetler</div>
+                                <div class="footer__link--2">Yazılım Geliştirme</div>
+                                <div class="footer__link--3">Outsourcing</div>
+                                <div class="footer__link--4">Kalite ve Süreç Yönetimi</div>                              
+                                <div class="footer__link--5">Danışmanlık</div>
+                                <div class="footer__link--6">IoT Destekli Çözümler</div>
+                                
                             </div>
                         </div>
                     </div>
                 </footer>
-                <div class="footer-bottom">
-                    <p class="text-wrapper-10">© Copyright 2010-2021 - Can Çevik</p>
-                    <div class="group-logo">
-                        <img class="medium-logo" src="images/MediumLogo.svg" alt="" />
-                        <img class="linkedin-logo" src="images/LinkedinLogo.svg" alt="" />
-                        <img class="twitter-logo" src="images/TwitterLogo.svg" alt="" />
-                        <img class="instagram-logo" src="images/InstagramLogo.svg" alt="" />
-                        <img class="facebook-logo" src="images/FacebookLogo.svg" alt="" />
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© Copyright 2010-2021 - Can Çevik</p>
+                    <div class="footer__social-icons">
+                        <img class="footer__icon footer__icon--medium" src="images/MediumLogo.svg" alt="" />
+                        <img class="footer__icon footer__icon--linkedin" src="images/LinkedinLogo.svg" alt="" />
+                        <img class="footer__icon footer__icon--twitter" src="images/TwitterLogo.svg" alt="" />
+                        <img class="footer__icon footer__icon--instagram" src="images/InstagramLogo.svg" alt="" />
+                        <img class="footer__icon footer__icon--facebook" src="images/FacebookLogo.svg" alt="" />
                     </div>
                 </div>
             </div>

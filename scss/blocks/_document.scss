@@ -1,0 +1,241 @@
+.document {
+    position: absolute;
+    width: 1157px;
+    height: 793px;
+    top: 874px;
+    left: 143px;
+
+    &__heading {
+        width: 428px;
+        top: 0;
+        left: 363px;
+        position: absolute;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 800;
+        color: #000;
+        font-size: 36px;
+        text-align: center;
+        line-height: normal;
+    }
+
+    &__description {
+        position: absolute;
+        width: 994px;
+        top: 86px;
+        left: 80px;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 400;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+        line-height: 39.5px;
+    }
+
+    &__analysis {
+        position: absolute;
+        width: 1177px;
+        height: 508px;
+        top: 285px;
+        left: 0;
+    }
+
+    &__item {
+        position: absolute;
+        width: 284px;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 800;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+
+        &--1 {
+            top: 87px;
+            left: 7px;
+        }
+
+        &--2 {
+            top: 87px;
+            left: 430px;
+        }
+
+        &--3 {
+            top: 87px;
+            left: 853px;
+        }
+
+        &--4 {
+            top: 383px;
+            left: 7px;
+        }
+
+        &--5 {
+            top: 383px;
+            left: 430px;
+        }
+
+        &--6 {
+            top: 383px;
+            left: 853px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        font-family: "Manrope", Sans-serif;
+        font-weight: 400;
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        line-height: 28px;
+
+        &--1 {
+            width: 316px;
+            top: 128px;
+            left: 414px;
+        }
+
+        &--2 {
+            width: 298px;
+            top: 128px;
+            left: 0;
+        }
+
+        &--3 {
+            width: 316px;
+            top: 128px;
+            left: 837px;
+        }
+
+        &--4 {
+            width: 316px;
+            top: 424px;
+            left: 414px;
+        }
+
+        &--5 {
+            width: 298px;
+            top: 424px;
+            left: 0;
+        }
+
+        &--6 {
+            width: 316px;
+            top: 424px;
+            left: 837px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+
+        &--1 {
+            width: 79px;
+            height: 77px;
+            top: 0;
+            left: 111px;
+        }
+
+        &--2 {
+            width: 81px;
+            height: 76px;
+            top: 1px;
+            left: 529px;
+        }
+
+        &--3 {
+            width: 90px;
+            height: 76px;
+            top: 1px;
+            left: 957px;
+        }
+
+        &--4 {
+            width: 77px;
+            height: 76px;
+            top: 303px;
+            left: 110px;
+        }
+
+        &--5 {
+            width: 83px;
+            height: 78px;
+            top: 295px;
+            left: 534px;
+        }
+
+        &--6 {
+            width: 67px;
+            height: 78px;
+            top: 295px;
+            left: 961px;
+        }
+    }
+}
+
+// Icon wrappers
+.files,
+.stars,
+.crowns,
+.chartbars,
+.chart-pie-slices,
+.figmas {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.files {
+    top: 0;
+    left: 34px;
+    background-color: #ff5391;
+}
+
+.stars {
+    top: 7px;
+    left: 0;
+    background-color: #7553ff;
+}
+
+.crowns {
+    top: 7px;
+    left: 45px;
+    background-color: #52c1ff;
+}
+
+.chartbars {
+    top: 5px;
+    left: 0;
+    background-color: #52acff;
+}
+
+.chart-pie-slices {
+    top: 0;
+    left: 38px;
+    background-color: #ff5252;
+}
+
+.figmas {
+    top: 0;
+    left: 19px;
+    background-color: #ffba52;
+}
+
+.file,
+.star,
+.crown,
+.chart-bar,
+.chart-pie-slice,
+.figma-logo {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    top: 0;
+    left: 0;
+}
+
+.figma-logo {
+    width: 67px;
+    height: 67px;
+    top: 11px;
+}
