@@ -38,7 +38,7 @@
         left: 0;
 
         .signup {
-            position: relative;
+            position: absolute;
             width: 502px;
             height: 73px;
             background-color: #fff;
@@ -79,6 +79,76 @@
                 letter-spacing: 0.2px;
                 color: #fff;
                 white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+
+
+        .hero {
+            position: static;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 20px 10px;
+
+            &__title {
+                position: static;
+                font-size: 28px;
+                line-height: 1.4;
+                width: 100%;
+            }
+
+            &__description {
+                position: static;
+                font-size: 14px;
+                line-height: 1.6;
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+
+        &__signup {
+            position: static;
+            width: 100%;
+            margin-top: 24px;
+
+            .signup {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .header__signup-text {
+                position: static;
+                flex: 1;
+                padding: 12px;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.4);
+            }
+
+
+            .header__signup-button-wrapper {
+                position: static;
+                width: auto;
+                background-color: #f84646;
+                padding: 12px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .header__signup-button {
+                    position: static;
+                    font-size: 14px;
+                    color: #fff;
+                    font-weight: 700;
+                }
             }
         }
     }

@@ -117,7 +117,7 @@
     }
 
     &__bookmyshow-logo {
-        position: relative;
+        position: absolute;
         width: 123px;
         height: 37px;
         top: 30px;
@@ -139,7 +139,7 @@
         justify-content: center;
         gap: 10px;
         padding: 10px;
-        position: relative;
+        position: absolute;
         top: 22px;
         left: 2px;
 
@@ -157,6 +157,102 @@
             width: 16px;
             height: 16px;
             background-size: 100% 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+        gap: 32px;
+        width: 100%;
+
+        &__heading {
+            align-items: center;
+            text-align: center;
+        }
+
+        &__title {
+            width: 100%;
+            font-size: 28px;
+            line-height: 1.4;
+        }
+
+        &__description {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        &__logos {
+            flex-direction: column;
+            width: 100%;
+            gap: 24px;
+            padding-bottom: 40px;
+            height: auto;
+        }
+
+        &__col {
+            gap: 16px;
+        }
+
+        &__logo {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__logo {
+            position: static;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        &__bookmyshow-logo,
+        &__see-all,
+        &__icon {
+            position: static;
+            width: auto;
+            height: auto;
+        }
+
+        &__see-all {
+            width: 100%;
+            justify-content: center;
+            padding: 12px;
+            gap: 8px;
+
+            &-text {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            &-icon {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        &__logo {
+            &--7 {
+                display: none;
+            }
+
+            &--8 {
+                display: none;
+            }
+
+            &--9 {
+                display: none;
+            }
+        }
+
+        .logo-clouds {
+            &__col:nth-of-type(n+4) {
+                display: none;
+            }
         }
     }
 }

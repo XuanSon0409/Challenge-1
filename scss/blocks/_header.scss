@@ -1,58 +1,105 @@
 .header {
+  position: absolute;
+  width: 1440px;
+  height: 754px;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/ImageHeader.png);
+
+  &__navbar {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
     position: absolute;
-    width: 1440px;
-    height: 754px;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: 50% 50%;
+    top: 45px;
+    left: 584px;
+  }
+
+  &__menu-toggle {
+    display: none;
+  }
+
+  &__nav-item {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    white-space: nowrap;
+    font-style: normal;
+  }
+
+  &__contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 35px;
+    left: 1227px;
+    background-color: #f84646;
+    border-radius: 5px;
+
+    &-btn {
+      all: unset;
+      position: relative;
+      width: fit-content;
+      margin-top: -1px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000;
+      white-space: nowrap;
+      font-style: normal;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    width: 375px;
+    height: 601px;
+    background-image: url(/images/ImageMobile.png);
+    background-size: 100% 100%;
 
     &__navbar {
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 40px;
-        position: absolute;
-        top: 45px;
-        left: 584px;
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    &__menu-toggle {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url('/images/Hamburger.svg') no-repeat center;
+      background-size: contain;
+      cursor: pointer;
+      z-index: 2;
     }
 
     &__nav-item {
-        position: relative;
-        width: fit-content;
-        margin-top: -1px;
-        font-family: "Manrope", sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000;
-        white-space: nowrap;
-        font-style: normal;
+      display: none;
     }
 
     &__contact {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 20px;
-        position: absolute;
-        top: 35px;
-        left: 1227px;
-        background-color: #f84646;
-        border-radius: 5px;
-
-        &-btn {
-            all: unset;
-            position: relative;
-            width: fit-content;
-            margin-top: -1px;
-            font-family: "Manrope", sans-serif;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 20px;
-            color: #000;
-            white-space: nowrap;
-            font-style: normal;
-        }
+      display: none;
+      position: static;
+      width: 80px;
+      height: auto;
     }
+  }
 }

@@ -119,3 +119,50 @@
         white-space: nowrap;
     }
 }
+
+@media (max-width: 768px) {
+    .illustration {
+        padding: 90px 20px;
+
+
+        &__block {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            padding: 0;
+            width: 338px;
+        }
+
+        &__block--left {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        &__title {
+            font-size: 28px;
+            text-align: center;
+            align-self: center;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+
+        &__text {
+            align-self: center;
+            width: 338px;
+        }
+
+        &__image {
+            margin-bottom: 1.5rem;
+            display: none
+        }
+
+        &__images {
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}
