@@ -1,30 +1,31 @@
 .stats {
-    position: absolute;
     width: 1440px;
     height: 376px;
-    top: 1807px;
-    left: 0;
+    position: relative;
+    padding-top: 300px;
 
-    &__backgrounds {
-        height: 376px;
-    }
+    // &__backgrounds {
+    //     height: 376px;
+    // }
 
     &__background {
-        position: absolute;
-        width: 1440px;
+        width: 100%;
         height: 376px;
         background-color: #f84646;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
         &-image {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: 1;
             opacity: 0.1;
+            position: static;
+            z-index: 1;
         }
     }
 
@@ -32,24 +33,21 @@
         display: flex;
         flex-direction: column;
         width: 836px;
-        align-items: flex-start;
+        align-items: center;
         gap: 8px;
-        position: absolute;
-        top: 68px;
-        left: 302px;
         z-index: 2;
+        margin-bottom: 40px;
+        padding-left: 30px;
     }
 
     &__titles {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 8px;
-        position: relative;
     }
 
     &__title {
-        position: relative;
         width: 836px;
         font-family: "Manrope", Sans-serif;
         font-weight: 800;
@@ -60,7 +58,6 @@
     }
 
     &__subtitle {
-        position: relative;
         font-family: "Manrope", Sans-serif;
         font-weight: 400;
         color: #fff;
@@ -73,112 +70,123 @@
     }
 
     &__benefit {
-        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 1096px;
         height: 62px;
-        top: 236px;
-        left: 178px;
+        padding-left: 20px;
 
         &--1,
         &--2,
         &--3,
         &--4 {
-            position: absolute;
             font-family: "Manrope", Sans-serif;
             font-weight: 700;
             color: #fff;
             font-size: 18px;
             line-height: 31px;
-        }
-
-        &--1 {
-            top: 0;
-            left: 0;
-        }
-
-        &--2 {
-            top: 0;
-            left: 273px;
-        }
-
-        &--3 {
-            top: 0;
-            left: 599px;
-        }
-
-        &--4 {
-            top: 0;
-            left: 906px;
+            text-align: center;
+            width: 200px;
         }
     }
 
     &__icon {
-        position: absolute;
         width: 32px;
         height: 32px;
-        top: 15px;
         background-size: 100% 100%;
         background-image: url('../images/IconCaretCircleDoubleRight.svg');
-
-        &--1 {
-            left: 192px;
-        }
-
-        &--2 {
-            left: 518px;
-        }
-
-        &--3 {
-            left: 825px;
-        }
+        background-repeat: no-repeat;
+        flex-shrink: 0;
     }
 
-    @media (max-width: 768px) {
-        padding: 0 20px;
-        width: 100%;
+    @media (max-width: 430px) {
+        .stats {
+            width: 100%;
+            height: 836px; // Allow height to adjust dynamically
+            padding-top: 0; // Match the padding from Image 2
 
-        &__titles {
-            padding-top: 68px;
-            padding-bottom: 78px;
-        }
-
-        &__title {
-            font-size: 2rem;
-        }
-
-        &__subtitle {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        &__benefit {
-            flex-direction: column;
-            padding: 0.5rem;
-
-            &--1 {
-                font-size: 1rem;
+            &__background {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // padding: 48px 20px;
+                justify-content: flex-start;
+                padding-top: 48px; // Adjusted to match the top spacing in Image 2
+                padding-bottom: 48px; // Add bottom padding to match Image 2
+                background-size: 20px 20px;
             }
 
-            &--2 {
-                font-size: 1rem;
+            &__background-image {
+                transform: rotate(90deg);
+                opacity: 0.1; // No visible overlay image in Image 2
             }
 
-            &--3 {
-                font-size: 1rem;
+            &__content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
             }
 
-            &--4 {
-                font-size: 1rem;
+            &__titles {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 24px; // Space between title/subtitle and benefits
             }
-        }
 
+            &__title {
+                width: 100%;
+                font-size: 1.75rem; // Match the title size in Image 2
+                line-height: 2.25rem;
+                text-align: center;
+                color: #ffffff; // White text to match Image 2
+                font-weight: bold;
+            }
 
+            &__subtitle {
+                font-size: 1rem; // Match the subtitle size in Image 2
+                line-height: 1.5rem;
+                text-align: center;
+                color: #ffffff; // White text to match Image 2
+                margin-bottom: 2rem; // Space below subtitle
+            }
 
-        &__icon {
-            .stats {
-                &__icon {
-                    transform: rotate(90deg);
+            &__benefit {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+
+                &--1,
+                &--2,
+                &--3,
+                &--4 {
+                    font-size: 1rem; // Match the benefit text size in Image 2
+                    line-height: 1.5rem;
+                    text-align: center;
+                    color: #ffffff; // White text to match Image 2
+                    margin-bottom: 1rem; // Space before the icon
                 }
+
+                &--4 {
+                    margin-bottom: 0; // Last item doesn't need bottom margin
+                }
+            }
+
+            &__icon {
+                width: 24px; // Match the icon size in Image 2
+                height: 24px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                transform: rotate(90deg); // Match the vertical icon orientation
+                margin-bottom: 1.5rem; // Space after the icon
             }
         }
     }

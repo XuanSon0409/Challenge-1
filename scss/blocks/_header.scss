@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   width: 1440px;
   height: 754px;
   top: 0;
@@ -8,13 +7,28 @@
   background-position: center;
   background-image: url(/images/ImageHeader.png);
 
+  @media (max-width: 430px) {
+    width: 375px;
+    height: 601px;
+    top: 0;
+    left: 0;
+    background-image: url(/images/ImageMobile.png);
+    background-size: 100% 100%;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 35px;
+    padding-right: 90px;
+    gap: 40px;
+  }
+
   &__navbar {
     display: inline-flex;
     align-items: flex-start;
     gap: 40px;
-    position: absolute;
-    top: 45px;
-    left: 584px;
   }
 
   &__menu-toggle {
@@ -40,7 +54,7 @@
     justify-content: center;
     gap: 10px;
     padding: 10px 20px;
-    position: absolute;
+    // position: absolute;
     top: 35px;
     left: 1227px;
     background-color: #f84646;
@@ -65,13 +79,7 @@
 
 @media (max-width: 430px) {
   .header {
-    position: absolute;
-    width: 375px;
-    height: 601px;
-    top: 0;
-    left: 0;
-    background-image: url(/images/ImageMobile.png);
-    background-size: 100% 100%;
+    
 
     &__background {
       position: absolute;
@@ -116,7 +124,7 @@
         position: relative;
         width: fit-content;
         margin-top: -1.00px;
-        font-family: "Manrope", Helvetica;
+        font-family: "Manrope", Sans-serif;
         font-weight: 700;
         color: #ffffff;
         font-size: 14px;

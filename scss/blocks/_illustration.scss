@@ -1,39 +1,31 @@
 .illustration {
-    position: absolute;
     width: 1197px;
     height: 1080px;
-    top: 2343px;
-    left: 121px;
+    margin-top: 470px;
+    margin-left: 121px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 
     &__block {
-        position: absolute;
         width: 1197px;
         height: 480px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         &--left {
-            top: 0;
-            left: 0;
-        }
-
-        &--right {
-            top: 600px;
-            left: 0;
+            flex-direction: row-reverse;
         }
     }
 
     &__content {
-        position: absolute;
         width: 612px;
         height: 480px;
-        top: 0;
-        left: 0;
     }
 
     &__title {
-        position: absolute;
         width: 608px;
-        top: 0;
-        left: 0;
         font-family: "Manrope", Sans-serif;
         font-weight: 700;
         color: #2e2e2e;
@@ -42,39 +34,29 @@
     }
 
     &__description {
-        position: absolute;
         width: 523px;
-        top: 192px;
-        left: 0;
+        // margin-top: 192px;
         font-family: "Manrope", Sans-serif;
         font-weight: 400;
         color: #808080;
         font-size: 16px;
         line-height: 32px;
+        padding-bottom: 89px;
     }
 
     &__image {
-        position: absolute;
         width: 504px;
         height: 480px;
-        top: 0;
-        left: 693px;
         object-fit: cover;
     }
 
     &__contents {
-        position: absolute;
         width: 552px;
         height: 480px;
-        top: 0;
-        left: 649px;
     }
 
     &__titles {
-        position: absolute;
         width: 548px;
-        top: 0;
-        left: 0;
         font-family: "Manrope", Sans-serif;
         font-weight: 700;
         color: #2e2e2e;
@@ -83,11 +65,8 @@
     }
 
     &__images {
-        position: absolute;
         width: 504px;
         height: 480px;
-        top: 0;
-        left: 0;
         object-fit: cover;
     }
 }
@@ -102,15 +81,12 @@
         justify-content: center;
         gap: 10px;
         padding: 12px;
-        position: absolute;
-        top: 432px;
-        left: 0;
+        // margin-top: 432px;
         background-color: #f84646;
         border-radius: 8px;
     }
 
     &__text {
-        position: relative;
         font-family: "Manrope", Sans-serif;
         font-weight: 600;
         color: #fff;
@@ -120,49 +96,58 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .illustration {
-        padding: 90px 20px;
-
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        height: auto;
+        gap: 40px;
 
         &__block {
+            width: 100%;
+            height: auto;
             flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        &__content,
+        &__contents {
+            width: 100%;
+            height: auto;
             text-align: center;
-            gap: 2rem;
-            padding: 0;
-            width: 338px;
         }
 
-        &__block--left {
-            flex-direction: column;
-            padding: 0;
-        }
-
-        &__title {
+        &__title,
+        &__titles {
+            width: 100%;
             font-size: 28px;
+            line-height: 34px;
             text-align: center;
-            align-self: center;
         }
 
         &__description {
-            font-size: 14px;
-        }
-
-        &__text {
-            align-self: center;
-            width: 338px;
-        }
-
-        &__image {
-            margin-bottom: 1.5rem;
-            display: none
-        }
-
-        &__images {
-            display: block;
             width: 100%;
-            margin-bottom: 1.5rem;
+            font-size: 14px;
+            line-height: 24px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+
+        &__image,
+        &__images {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .button--primary {
+            margin: 0 auto;
+            margin-top: 0;
         }
     }
-
 }
