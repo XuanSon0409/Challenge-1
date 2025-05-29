@@ -1,5 +1,4 @@
 .document {
-    // position: absolute;
     width: 1157px;
     height: 793px;
     top: 874px;
@@ -29,7 +28,6 @@
     }
 
     &__analysis {
-        // position: absolute;
         width: 1177px;
         height: 508px;
         padding-left: 180px;
@@ -45,7 +43,6 @@
     }
 
     &__item {
-        // position: absolute;
         width: 284px;
         font-family: "Manrope", Sans-serif;
         font-weight: 800;
@@ -85,7 +82,6 @@
     }
 
     &__text {
-        // position: absolute;
         font-family: "Manrope", Sans-serif;
         font-weight: 400;
         color: #000;
@@ -185,7 +181,6 @@
     .chart-bar,
     .chart-pie-slice,
     .figma-logo {
-        // position: absolute;
         width: 76px;
         height: 76px;
         top: 0;
@@ -207,7 +202,6 @@
         height: auto;
         align-items: center;
         justify-content: center;
-        // margin: 0 auto;
         padding: 0 20px;
 
         &__heading {

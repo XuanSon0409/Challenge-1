@@ -1,30 +1,30 @@
 .stats {
     width: 1440px;
     height: 376px;
-    position: relative;
     padding-top: 300px;
 
-    // &__backgrounds {
-    //     height: 376px;
-    // }
+    &__backgrounds {
+        height: 376px;
+    }
 
     &__background {
         width: 100%;
+        max-width: 1440px;
         height: 376px;
         background-color: #f84646;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        position: relative;
+        position: relative; 
 
         &-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             opacity: 0.1;
-            position: static;
+            position: absolute; 
+            left: 0;
             z-index: 1;
         }
     }
@@ -32,12 +32,12 @@
     &__content {
         display: flex;
         flex-direction: column;
-        width: 836px;
         align-items: center;
         gap: 8px;
+        width: 836px;
+        margin-top: 68px;
         z-index: 2;
-        margin-bottom: 40px;
-        padding-left: 30px;
+        padding-left: 55px;
     }
 
     &__titles {
@@ -66,7 +66,6 @@
         line-height: 32px;
         font-style: normal;
         letter-spacing: 0px;
-        align-self: stretch;
     }
 
     &__benefit {
@@ -75,7 +74,8 @@
         align-items: center;
         width: 1096px;
         height: 62px;
-        padding-left: 20px;
+        margin-left: 15px;
+        margin-top: 108px; 
 
         &--1,
         &--2,
@@ -87,7 +87,22 @@
             font-size: 18px;
             line-height: 31px;
             text-align: center;
-            width: 200px;
+        }
+
+        &--1 {
+            flex: 1;
+        }
+
+        &--2 {
+            flex: 1;
+        }
+
+        &--3 {
+            flex: 1;
+        }
+
+        &--4 {
+            flex: 1;
         }
     }
 
@@ -96,15 +111,26 @@
         height: 32px;
         background-size: 100% 100%;
         background-image: url('../images/IconCaretCircleDoubleRight.svg');
-        background-repeat: no-repeat;
-        flex-shrink: 0;
+
+        &--1 {
+            margin-left: 20px;
+        }
+
+        &--2 {
+            margin-left: 20px;
+        }
+
+        &--3 {
+            margin-left: 20px;
+        }
     }
+}
 
     @media (max-width: 430px) {
         .stats {
             width: 100%;
-            height: 836px; // Allow height to adjust dynamically
-            padding-top: 0; // Match the padding from Image 2
+            height: 836px; 
+            padding-top: 0; 
 
             &__background {
                 width: 100%;
@@ -112,16 +138,15 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                // padding: 48px 20px;
                 justify-content: flex-start;
-                padding-top: 48px; // Adjusted to match the top spacing in Image 2
-                padding-bottom: 48px; // Add bottom padding to match Image 2
+                padding-top: 48px;
+                padding-bottom: 48px; 
                 background-size: 20px 20px;
             }
 
             &__background-image {
                 transform: rotate(90deg);
-                opacity: 0.1; // No visible overlay image in Image 2
+                opacity: 0.1; 
             }
 
             &__content {
@@ -137,24 +162,22 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-bottom: 24px; // Space between title/subtitle and benefits
-            }
+                padding-bottom: 24px; 
 
             &__title {
                 width: 100%;
-                font-size: 1.75rem; // Match the title size in Image 2
-                line-height: 2.25rem;
+                font-size: 1.75rem; 
                 text-align: center;
-                color: #ffffff; // White text to match Image 2
+                color: #ffffff;
                 font-weight: bold;
             }
 
             &__subtitle {
-                font-size: 1rem; // Match the subtitle size in Image 2
+                font-size: 1rem; 
                 line-height: 1.5rem;
                 text-align: center;
-                color: #ffffff; // White text to match Image 2
-                margin-bottom: 2rem; // Space below subtitle
+                color: #ffffff; 
+                margin-bottom: 2rem; 
             }
 
             &__benefit {
@@ -168,25 +191,25 @@
                 &--2,
                 &--3,
                 &--4 {
-                    font-size: 1rem; // Match the benefit text size in Image 2
+                    font-size: 1rem; 
                     line-height: 1.5rem;
                     text-align: center;
-                    color: #ffffff; // White text to match Image 2
-                    margin-bottom: 1rem; // Space before the icon
+                    color: #ffffff; 
+                    margin-bottom: 1rem; 
                 }
 
                 &--4 {
-                    margin-bottom: 0; // Last item doesn't need bottom margin
+                    margin-bottom: 0; 
                 }
             }
 
             &__icon {
-                width: 24px; // Match the icon size in Image 2
+                width: 24px; 
                 height: 24px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                transform: rotate(90deg); // Match the vertical icon orientation
-                margin-bottom: 1.5rem; // Space after the icon
+                transform: rotate(90deg); 
+                margin-bottom: 1.5rem; 
             }
         }
     }

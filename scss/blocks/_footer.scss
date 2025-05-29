@@ -1,124 +1,68 @@
 .footer-wrapper {
-    position: absolute;
-    width: 1442px;
-    height: 536px;
-    top: 4820px;
-    left: 0;
-    text-align: center ;
+    width: 100%;
+    max-width: 1442px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f8464a;
 }
 
 .footer {
-    position: absolute;
-    width: 1442px;
-    height: 536px;
-    top: 0;
-    left: 0;
-    background-color: transparent;
+    width: 100%;
+    padding: 80px 0 0;
 
     &__columns {
-        position: absolute;
-        width: 1440px;
-        height: 536px;
-        background-color: #f8464a;
+        width: 100%;
+        display: flex;
+        padding-left: 120px;
     }
 
     &__groups {
-        position: absolute;
+        display: flex;
+        justify-content: space-around;
         width: 1034px;
-        height: 304px;
-        top: 80px;
-        left: 104px;
     }
 
     &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: left;
+
         &--1 {
-            position: absolute;
             width: 157px;
-            height: 136px;
-            top: 0;
-            left: 883px;
         }
 
         &--2 {
-            position: absolute;
             width: 160px;
-            height: 192px;
-            top: 0;
-            left: 631px;
         }
 
         &--3 {
-            position: absolute;
             width: 259px;
-            height: 248px;
-            top: 0;
-            left: 282px;
         }
 
         &--4 {
-            position: absolute;
             width: 194px;
-            height: 304px;
-            top: 0;
-            left: 0;
         }
     }
 
     &__link {
-
-        &--1,
-        &--2,
-        &--3,
-        &--4,
-        &--5,
-        &--6 {
-            position: absolute;
-            font-family: "Inter", Sans-serif;
-            font-size: 16px;
-            letter-spacing: 0;
-            line-height: 32px;
-            white-space: nowrap;
-        }
+        font-family: "Inter", Sans-serif;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+        white-space: nowrap;
 
         &--1 {
-            top: 0;
-            left: 0;
             font-weight: 700;
             color: #fff;
             line-height: 24px;
         }
 
-        &--2 {
-            top: 48px;
-            left: 0;
-            font-weight: 400;
-            color: #e6e6e6;
-        }
-
-        &--3 {
-            top: 104px;
-            left: 0;
-            font-weight: 400;
-            color: #e6e6e6;
-        }
-
-        &--4 {
-            top: 160px;
-            left: 0;
-            font-weight: 400;
-            color: #e6e6e6;
-        }
-
-        &--5 {
-            top: 216px;
-            left: 0;
-            font-weight: 400;
-            color: #e6e6e6;
-        }
-
+        &--2,
+        &--3,
+        &--4,
+        &--5,
         &--6 {
-            top: 272px;
-            left: 0;
             font-weight: 400;
             color: #e6e6e6;
         }
@@ -128,17 +72,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 20px;
+        padding: 50px 48px 70px 152px;
         flex-wrap: wrap;
         gap: 20px;
     }
 
     &__copyright {
-        position: absolute;
-        width: 400px;
-        top: 434px;
-        left: 104px;
         font-family: "Inter", Sans-serif;
         font-weight: 400;
         color: #fff;
@@ -148,55 +87,15 @@
     }
 
     &__social-icons {
-        position: absolute;
-        width: 224px;
-        height: 32px;
-        top: 434px;
-        left: 1118px;
+        display: flex;
+        gap: 16px;
 
         .footer__icon {
-            position: absolute;
             width: 32px;
             height: 32px;
-
-            &--medium {
-                left: 0;
-            }
-
-            &--linkedin {
-                left: 48px;
-            }
-
-            &--twitter {
-                left: 96px;
-            }
-
-            &--instagram {
-                left: 144px;
-            }
-
-            &--facebook {
-                left: 192px;
-                background-size: 100% 100%;
-            }
         }
     }
 
-    @media (max-width: 768px) {
-
-        padding: 0 20px;
-
-        &__columns {
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-
-        &__bottom {
-            flex-direction: column-reverse;
-            align-items: flex-start;
-            gap: 20px;
-        }
-    }
 
     @media (max-width: 430px) {
 

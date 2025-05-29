@@ -1,40 +1,25 @@
 .contact {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 649px;
     height: 314px;
-    top: 4346px;
-    left: 397px;
+    margin: 300px 397px 100px 398px;
 
     &__icon-wrapper {
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 120px;
         height: 120px;
-        top: 0;
-        left: 262px;
-    }
-
-    &__icon-background {
-        position: absolute;
-        width: 61px;
-        height: 61px;
-        top: 6px;
-        left: 55px;
-        background-color: #f84646;
-        border-radius: 50%;
     }
 
     &__icon {
-        position: absolute;
         width: 120px;
         height: 120px;
-        top: 0;
-        left: 0;
     }
 
     &__title {
-        position: absolute;
-        top: 130px;
-        left: 194px;
         font-family: "Manrope", Sans-serif;
         font-weight: 800;
         color: #000;
@@ -42,12 +27,10 @@
         text-align: center;
         line-height: 32px;
         white-space: nowrap;
+        margin-top: 10px;
     }
 
     &__description {
-        position: absolute;
-        top: 182px;
-        left: 0;
         font-family: "Manrope", Sans-serif;
         font-weight: 500;
         color: #000;
@@ -55,6 +38,7 @@
         text-align: center;
         line-height: 32px;
         white-space: nowrap;
+        margin-top: 12px;
     }
 
     &__button {
@@ -63,11 +47,9 @@
         justify-content: center;
         gap: 10px;
         padding: 25px 40px;
-        position: absolute;
-        top: 244px;
-        left: 220px;
         background-color: #f84646;
         border-radius: 8px;
+        margin-top: 12px;
 
         &-text {
             font-family: "Manrope", Sans-serif;
