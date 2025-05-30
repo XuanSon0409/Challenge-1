@@ -149,9 +149,10 @@
 
 
     @media (max-width: 430px) {
-        padding: 0 20px;
+        padding: 40px 20px 0;
         gap: 32px;
-        width: 100%;
+        width: 375px;
+        top: 80px;
 
         &__heading {
             align-items: center;
@@ -160,13 +161,13 @@
 
         &__title {
             width: 100%;
-            font-size: 28px;
-            line-height: 1.4;
+            font-size: 36px;
+            line-height: 41.5px;
         }
 
         &__description {
             font-size: 14px;
-            line-height: 1.6;
+            line-height: 32px;
         }
 
         &__logos {
@@ -178,7 +179,7 @@
         }
 
         &__col {
-            gap: 16px;
+            gap: 24px;
         }
 
         &__logo {
@@ -193,8 +194,9 @@
 
         &__logo {
             position: static;
-            width: 100%;
-            height: auto;
+            width: 170px;
+            height: 96px;
+            border-radius: 16px;
             object-fit: contain;
         }
 
@@ -220,6 +222,7 @@
             &-icon {
                 width: 14px;
                 height: 14px;
+                font-size: 12px;    
             }
         }
 
