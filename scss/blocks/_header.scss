@@ -8,7 +8,7 @@
   background-image: url(/images/ImageHeader.png);
 
   @media (max-width: 430px) {
-    width: 375px;
+    width: auto;
     height: 601px;
     top: 0;
     left: 0;
@@ -16,12 +16,16 @@
     background-size: 100% 100%;
   }
 
+  &__background {
+    display: flex;
+    gap: 40px;
+  }
+
   &__top {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 35px;
-    padding-right: 90px;
+    padding: 35px 90px 0;
     gap: 40px;
   }
 
@@ -78,17 +82,14 @@
 
 @media (max-width: 430px) {
   .header {
-    
+
 
     &__background {
       position: absolute;
-      width: 100%;
+      width: auto;
       height: 601px;
       top: 0;
       left: 0;
-      background: radial-gradient(50% 50% at 141% 78%,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(255, 255, 255, 0) 100%);
       z-index: 0;
     }
 
@@ -101,6 +102,8 @@
       background-image: url(/images/List.svg);
       background-size: 100% 100%;
       z-index: 2;
+      display: block;
+      border: none;
     }
 
     &__nav-item {
